@@ -1,0 +1,10 @@
+github推送异常
+
+github现在不支持账号密码登录了
+
+idea可直接设置token
+
+sourcetree设置成https://ghp_YHsSQzIhUFPpfxxxxxxxa2biO0ciwDe@github.com/bcbcbbc/maven-master
+中间为github生成的登录令牌token
+
+太坑啦 第一天奋发学习就遇到这么坑的事╰（‵□′）╯
