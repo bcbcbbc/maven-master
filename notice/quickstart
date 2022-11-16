@@ -1,0 +1,10 @@
+快速构建
+
+idea操作方法
+项目右键 - new - module
+选择maven项目 - create from archetype - 选择想要的模板（maven-archetype-quickstart）
+等待相关依赖下载 - 完成
+
+
+可能问题：create from archetype或下载依赖失败
+需配置阿里云镜像仓库
