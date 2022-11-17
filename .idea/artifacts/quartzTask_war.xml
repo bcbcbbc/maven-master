@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="quartzTask:war">
+    <output-path>$PROJECT_DIR$/quartzTask/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>quartzTask</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="quartzTask.war">
+      <element id="artifact" artifact-name="quartzTask:war exploded" />
+    </root>
+  </artifact>
+</component>

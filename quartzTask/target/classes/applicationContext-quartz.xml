@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>myshortname</short-name>
+    <uri>http://mycompany.com</uri>
+
+    <!-- Invoke 'Generate' action to add tags or functions -->
+
+    <!-- ???bean -->
+    <bean id= "beanId" class ="org.example.myQuartz"/>
+    <bean id= "beanMethod"
+          class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="beanId"/>
+        <property name="targetMethod" value="autoOpinion"/>
+        <property name="concurrent" value="false"/>
+    </bean>
+    <!-- ??????? -->
+    <bean id= "quartzTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean" >
+        <property name="jobDetail" ref="beanMethod" />
+        <!-- ?5?????? 0 0/5 * * * ?-->
+        <property name="cronExpression" value="0 0/1 * * * ?" />
+    </bean>
+
+
+    <bean id= "ceTaskTrigger" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers" >
+            <list>
+                <ref bean="quartzTrigger" />
+            </list>
+        </property>
+    </bean>
+
+</taglib>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/maven-master.iml" filepath="$PROJECT_DIR$/.idea/maven-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quartzTask/quartzTask.iml" filepath="$PROJECT_DIR$/quartzTask/quartzTask.iml" />
       <module fileurl="file://$PROJECT_DIR$/quickstart/quickstart.iml" filepath="$PROJECT_DIR$/quickstart/quickstart.iml" />
     </modules>
   </component>

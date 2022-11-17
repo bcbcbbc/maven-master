@@ -7,10 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="quickstart" />
+        <module name="quartzTask" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="quartzTask" target="1.7" />
       <module name="quickstart" target="1.7" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding=UTF-8" />
   </component>
 </project>
